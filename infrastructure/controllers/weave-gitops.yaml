@@ -28,7 +28,7 @@ spec:
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     adminUser:
       create: true
-      passwordHash: $2a$10$t/wk8MIWCYp.HBRE68T8FO5UVxTqtZM55BD4XfntO74WuMQAiqJYm #averyverystrongpassword
+      passwordHash: $2y$05$S2Ggrl.0EcsY9wpmo8KTcenf.2J0Q8z/os6GmSb7mWyMAD6GtMave #admin
       username: admin
     ingress:
       enabled: true
