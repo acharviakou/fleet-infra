@@ -25,6 +25,11 @@ spec:
         namespace: flux-system
       interval: 12h
   values:
+    WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    adminUser:
+      create: true
+      passwordHash: $2a$10$t/wk8MIWCYp.HBRE68T8FO5UVxTqtZM55BD4XfntO74WuMQAiqJYm #averyverystrongpassword
+      username: admin
     ingress:
       enabled: true
       className: "nginx"
