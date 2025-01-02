@@ -36,4 +36,4 @@ spec:
       service:
         type: "NodePort"
     admissionWebhooks:
-      enabled: false
+      enabled: true
