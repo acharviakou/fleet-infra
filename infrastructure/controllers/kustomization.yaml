@@ -17,6 +17,8 @@ configMapGenerator:
         app.kubernetes.io/component: monitoring
         kustomize.toolkit.fluxcd.io/substitute: disabled
 spec:
+  interval: 5m
+  prune: true
   postBuild:
     substitute:
       env: "local"
