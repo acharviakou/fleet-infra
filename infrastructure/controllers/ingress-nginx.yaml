@@ -35,5 +35,5 @@ spec:
     controller:
       service:
         type: "NodePort"
-    admissionWebhooks:
-      enabled: true
+      admissionWebhooks:
+        enabled: true
