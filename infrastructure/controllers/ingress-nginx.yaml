@@ -43,3 +43,11 @@ spec:
             create: true
         certManager:
           enabled: false
+      hostPort:
+        # -- Enable 'hostPort' or not
+        enabled: true
+        ports:
+          # -- 'hostPort' http port
+          http: 80
+          # -- 'hostPort' https port
+          https: 443
