@@ -4,3 +4,21 @@ resources:
   # - cert-manager.yaml
   - ingress-nginx.yaml
   - weave-gitops.yaml
+  - kube-state-metrics-config.yaml
+  - victoria-metrics-k8s-stack.yaml
+configMapGenerator:
+  - name: kube-state-metrics-config
+    namespace: monitoring
+    files:
+      - kube-state-metrics-config.yaml
+    options:
+      labels:
+        app.kubernetes.io/part-of: flux
+        app.kubernetes.io/component: monitoring
+        kustomize.toolkit.fluxcd.io/substitute: disabled
+spec:
+  postBuild:
+    substitute:
+      env: "local"
+      cluster_name: "local"
+      cluster_subdomain: "lan"
