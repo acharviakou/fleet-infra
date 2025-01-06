@@ -39,5 +39,7 @@ spec:
         enabled: true
         patch:
           enabled: true
+          serviceAccount:
+            create: true
         certManager:
           enabled: false
