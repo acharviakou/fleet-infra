@@ -4,4 +4,4 @@ resources:
   # - cert-manager.yaml
   - ./ingress-nginx
   - ./weave-gitops
-  # - ./victoria-metrics-k8s-stack
+  - ./victoria-metrics-k8s-stack
