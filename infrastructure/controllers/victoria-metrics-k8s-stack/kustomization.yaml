@@ -29,9 +29,3 @@ configMapGenerator:
         kustomize.toolkit.fluxcd.io/substitute: disabled
 configurations:
   - kustomizeconfig.yaml
-spec:
-  postBuild:
-    substitute:
-      env: "local"
-      cluster_name: "local"
-      cluster_subdomain: "lan"
